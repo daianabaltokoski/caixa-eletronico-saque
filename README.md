@@ -17,6 +17,7 @@ O código JavaScript precisa ser escrito em um arquivo com extensão .js e ser r
 
 # Observações:
 
+- Utilizei classes do Bootstrap;
 - Caso o usuário tente digitar letras não será possível pois o input é tipo number;
 - Caso tente incluir qualquer caractere que não seja número (como vírgula ou ponto) receberá um aviso (alert) informando que o número deve ser inteiro;
-- Caso o campo esteja vazio receberá o mesmo aviso pois verefico se há um número válido (através de um isNaN);
+- Caso o campo esteja vazio receberá o mesmo aviso pois verefica se há um número válido (através de um isNaN);

@@ -30,7 +30,7 @@ function contagemNotas() {
     if (notasDe50 > 0) texto += `${notasDe50} nota(s) de R$50\n`;
     if (notasDe20 > 0) texto += `${notasDe20} nota(s) de R$20\n`;
     if (notasDe10 > 0) texto += `${notasDe10} nota(s) de R$10\n`;
-    if (notasDe5 > 0) texto += `${notasDe5}\n nota(s) de R$5`;
+    if (notasDe5 > 0) texto += `${notasDe5} nota(s) de R$5\n`;
     if (notasDe2 > 0) texto += `${notasDe2} nota(s) de R$2\n`;
     if (notasDe1 > 0) texto += `${notasDe1} nota(s) de R$1\n`;
 

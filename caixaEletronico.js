@@ -23,13 +23,18 @@ function contagemNotas() {
     let notasDe1 = valorSaque;
 
     const p = document.getElementById("notas")
-    p.innerText = `Notas de R$ 100: ${notasDe100}\n
-    Notas de R$ 50: ${notasDe50}\n
-    Notas de R$ 20: ${notasDe20}\n
-    Notas de R$ 10: ${notasDe10}\n
-    Notas de R$ 5: ${notasDe5}\n
-    Notas de R$ 2: ${notasDe2}\n
-    Notas de R$ 1: ${notasDe1}`
+
+    let texto = '';
+
+    if (notasDe100 > 0) texto += `${notasDe100} nota(s) de R$100\n`;
+    if (notasDe50 > 0) texto += `${notasDe50} nota(s) de R$50\n`;
+    if (notasDe20 > 0) texto += `${notasDe20} nota(s) de R$20\n`;
+    if (notasDe10 > 0) texto += `${notasDe10} nota(s) de R$10\n`;
+    if (notasDe5 > 0) texto += `${notasDe5}\n nota(s) de R$5`;
+    if (notasDe2 > 0) texto += `${notasDe2} nota(s) de R$2\n`;
+    if (notasDe1 > 0) texto += `${notasDe1} nota(s) de R$1\n`;
+
+    p.innerText = texto.trim();
 }
 
 function validarNumero(event) {
@@ -38,19 +43,8 @@ function validarNumero(event) {
     if (!regex.test(input.value)) {
         alert('Por favor, insira um número inteiro.');
         input.value = input.value.replace(/[^0-9]/g, '');
-    } }
+    }
+}
 
 document.getElementById("botao").addEventListener("click", contagemNotas)
 document.getElementById("sacar").addEventListener("input", validarNumero)
-
-// document.getElementById("sacar").addEventListener("blur", (e) => {
-//     const v = parseInt(e.target.value)
-//     if (v < 10 || isNaN(v)) {
-//         e.target.value = '10'
-//     }
-
-//     if (v > 600) {
-//         e.target.value = '600'
-//     }
-
-// })

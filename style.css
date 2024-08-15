@@ -1,0 +1,9 @@
+body {
+    background-image: url(Images/9965079.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+    height: 100vh; 
+    box-sizing: border-box;
+}
+

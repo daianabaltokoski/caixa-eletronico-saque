@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Caixa Eletrônico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex align-items-center">
+    <div class="card container text-center col-md-6 border-5 border-dark rounded-5">
+        <h1 class="mt-5 mb-3">$ -- CAIXA ELETRÔNICO -- $</h1>
+        <hr>
+        <h3 class="mb-5 mt-3 fs-4">Digite o valor do saque:</h3>
+        <div>
+            <label class="fs-5">R$</label>
+            <input class="fs-5" id="sacar" type="number" min="10" max="600" step="1" placeholder="Ex: 100" value="100">
+        </div>
+
+        <div>
+            <button class="btn btn-success btn-lg mb-3 mt-5" type="submit" id="botao">Confirmar Saque</button>
+        </div>
+            <hr>
+        
+                <p class="fs-5 mb-5 mt-3"><span id="notas"></span></p>
+    </div>
+
+
+
+    <script src="caixaEletronico.js"></script>
+</body>
+
+</html>
